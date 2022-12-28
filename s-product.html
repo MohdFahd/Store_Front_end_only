@@ -1,0 +1,376 @@
+<link rel="stylesheet" href="all.min.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .popup {
+            z-index: 999;
+            background-color: #ffffff;
+            width: 420px;
+            padding: 30px 40px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: -10%;
+            border-radius: 8px;
+            font-family: "Poppins", sans-serif;
+            display: block;
+            text-align: center;
+            transition: transform 0.4s, top 0.4s;
+            visibility: hidden;
+            box-shadow: 0px 1px 10px black;
+        }
+
+        .shadow {
+            opacity: 0.1;
+        }
+
+        .openpop {
+            visibility: visible;
+            top: 50%;
+        }
+
+        .color {
+            background-color: #2f428f;
+            width: 100%;
+            height: 400px;
+        }
+
+        .popup button {
+            margin: 0px 0px 20px auto;
+            background-color: green;
+            font-size: 30px;
+            color: #ffffff;
+            background: green;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .popup h2 {
+            margin-top: -20px;
+        }
+
+        .popup p {
+            font-size: 14px;
+            text-align: justify;
+            margin: 20px 0;
+            line-height: 25px;
+        }
+
+        .popup h3 {
+            display: block;
+            width: 150px;
+            position: relative;
+            margin: 10px auto;
+            text-align: center;
+            background-color: #0f72e5;
+            border-radius: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popup" id="popup">
+        <button><i class="fa fa-check"></i></button>
+        <h2>Automatic Pop-Up</h2>
+        <p>
+           <center>Thanks, the product has been in the cart!!</center>
+        </p>
+        <h3 onclick="closefunction()">OK</h3>
+    </div>
+
+    <main id="shadow">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul id="navbar">
+                    <li><a href="indext.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact<a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+            <div class="mobile">
+                <i class="fa fa-shopping-bag"></i>
+                <a href="" id="bar" style="cursor:pointer;"><i class="fa fa-outdent"></i></a>
+            </div>
+        </header>
+        <section class="product-details">
+            <div class="pro-imgs">
+                <img src="img/products/f1.jpg" alt="" width="100%" id="main-img">
+                <div class="s-imgGroup">
+                    <div class="s-imgCol">
+                        <img src="img/products//f1.jpg" alt="" class="small-img" width="100%">
+                    </div>
+                    <div class="s-imgCol">
+                        <img src="img/products//f2.jpg" alt="" class="small-img" width="100%">
+                    </div>
+
+                    <div class="s-imgCol">
+                        <img src="img/products//f3.jpg" alt="" class="small-img" width="100%">
+                    </div>
+                    <div class="s-imgCol">
+                        <img src="img/products//f4.jpg" alt="" class="small-img" width="100%">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pro-info">
+                <h5>Home/T-shirt</h5>
+                <h3>Men's Fashion T-Shirt</h3>
+                <h4>$123</h4>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">XL</option>
+                    <option value="">X</option>
+                    <option value="">XXL</option>
+                    <option value="">Small</option>
+                    <option value="">Larg</option>
+                </select>
+                <input type="number" value="1" min="1" max="10">
+                <button onclick="openfunction()">Add To Cart</button>
+                <h4>Product Details</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi deleniti a cum harum nam amet
+                    libero. Alias libero vitae id natus quia porro, labore, sunt, tempora reiciendis obcaecati ea.</p>
+
+            </div>
+        </section>
+        <section class="feature-products">
+            <h1>feature-products</h1>
+            <p>summer collection new modern design </p>
+            <div class="content">
+                <div class="card">
+                    <img src="img/products/n1.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n8.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$220</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n2.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$30</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n3.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$79</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n4.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n5.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n6.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$40</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+                <div class="card">
+                    <img src="img/products/n7.jpg" alt="" class="pic">
+                    <div class="info">
+                        <span>addidas</span>
+                        <h3>cartoon astronut t-shirt</h3>
+                        <div>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                            <i class="fas fa-star strar"></i>
+                        </div>
+                        <h4>$89</h4>
+                    </div>
+                    <i class="fa fa-shopping-cart cart"></i>
+                </div>
+            </div>
+        </section>
+        <section class="sign-ad">
+            <div>
+                <h3>Sign up free newletters</h3>
+                <h5>Get email updates about our lastest shop and <span style="color: rgba(255, 166, 0, 0.541);">special
+                        offers</span></h5>
+            </div>
+            <form action="" style="padding: 0px 25px;">
+                <input type="email" placeholder="Your email address" class="email">
+                <label for="sign up">Sign up</label>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="col">
+            <img class="f-logo" src="img/logo.png" alt="">
+            <h3>Contact</h3>
+            <p><strong style="color: black ;">address: </strong>sana'a 60 street front saba bank</p>
+            <p><strong style="color: black ;">phone: </strong>00967779628232</p>
+            <p><strong style="color: black ;">hours: </strong>from 10am to 8pm</p> <br>
+            <h3>Follow us</h3>
+            <div class="iconss">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="col">
+            <h3>About us</h3>
+            <a href="#">delivery information</a>
+            <a href="#">privacy policy</a>
+            <a href="#">terms & condition</a>
+            <a href="#">contact us </a>
+        </div>
+        <div class="col">
+            <h3>my account</h3>
+            <a href="#">sign in</a>
+            <a href="#">view cart</a>
+            <a href="#">my wishlist</a>
+            <a href="#">track my order</a>
+            <a href="#">help</a>
+        </div>
+        <div class="col">
+            <h3>instal app</h3>
+            <p>from app store or google play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>secured follow link (ctrl + click)</p>
+            <img src="img/pay/pay.png" alt="" class="pay">
+        </div>
+        <div class="copywrite">
+            <p class="co">@2022 it was done by mohammed</p>
+            <a href="" class="bar" style="cursor:pointer;"><i class="fa fa-outdent"></i></a>
+        </div>
+    </footer>
+    <script>
+        var MainImg = document.getElementById("main-img");
+        var simg = document.getElementsByClassName("small-img");
+
+        simg[0].onclick = function () {
+            MainImg.src = simg[0].src;
+        }
+        simg[1].onclick = function () {
+            MainImg.src = simg[1].src;
+        }
+        simg[2].onclick = function () {
+            MainImg.src = simg[2].src;
+        }
+        simg[3].onclick = function () {
+            MainImg.src = simg[3].src;
+        }
+
+        let popup = document.getElementById("popup");
+        let shadow = document.getElementById("shadow");
+        function openfunction() {
+            popup.classList.add("openpop");
+            shadow.classList.add("shadow");
+        }
+        function closefunction() {
+            popup.classList.remove("openpop");
+            shadow.classList.remove("shadow");
+        }
+    </script>
+</body>

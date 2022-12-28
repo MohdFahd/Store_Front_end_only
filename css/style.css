@@ -1,0 +1,262 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: system-ui;
+}
+header{
+    width: 100%;
+    background-color: rgb(197, 197, 230);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 2px 0px 12px rgb(0, 0, 0);
+}
+li{
+    display: inline;
+    list-style: none;
+    padding: 12px;
+    margin-right: 24px;
+    position: relative;
+}
+.logo{
+    padding: 0px 80px;
+}
+.shopping{
+    position: relative;
+    top: 10;
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(82, 49, 49);
+}
+li a:hover, .active{
+    color: rgb(131, 105, 105);
+    transition: 0.2s ease;
+}
+.active::after ,a:hover::after{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: rgb(142, 142, 248);
+    position: absolute;
+    top: 41;
+    right: 11px;
+}
+section{
+    padding: 40px 0px;
+}
+.main-page{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url(img/hero4.png) no-repeat;
+    /* background-position: top 25% right 0%; */
+    background-size: cover;
+    background-attachment: fixed;
+}.main{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main h1{
+    font-size: 60px;
+    font-weight: 500;
+    padding: 10px;
+}
+h1 span{
+    color: rgb(170, 109, 87);
+}
+.btn button{
+    margin: 18px 12px;
+    background: url(img/button.png);
+    padding: 12px 70px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(141, 87, 87);
+    border: none;
+    cursor: pointer;
+}
+.f-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 50px 12px;
+}
+.f-card div{
+    border-radius: 10px;
+    padding: 4px;
+    width: 188;
+    font-size: 12px;
+    text-align: center;
+    color: brown;
+    border: 1px solid #cce7d0;
+    box-shadow: 1px 1px 3px rgb(46, 41, 41) ;
+    transition: 1s ease;
+}
+.f-card div:hover, h2{
+    background-color:  rgb(248, 230, 230);
+    transform: scale(1.1);
+    text-transform: capitalize;
+}
+.f-card div h2{
+    margin: 15px 0px;
+    padding: 12px;
+    color: #088178;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fddde4;
+}
+.f-card div img{
+    width: 100%;
+    padding: 15px 0px;
+}
+.feature-products h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.feature-products p {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgba(32, 12, 12, 0.65);
+}  
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+    
+}
+.card{
+    width: 20%;
+    min-width: 250px;
+    padding: 15px 12px;
+    margin: 15px 0px;
+    border: 1px solid rgba(238, 229, 229, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(172, 0, 0);
+    border-radius: 25px;
+    position: relative;
+
+}
+.card:hover{
+    background-color: rgba(231, 216, 216, 0.527);
+}
+.content .card .pic{
+    width: 100%;
+    border-radius: 25px;
+}
+.content .card .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .card .info h3{
+    font-size: 21px;
+    padding: 5px 0px;
+    text-transform: capitalize;
+    color: rgb(151, 146, 138);
+}
+.content .card .info div i a{
+    padding: 3px;
+}
+.card .cart{
+    background-color: #fdfdfd;
+    border-radius: 50%;
+    border: 0 solid rgb(209, 209, 175) ;
+    position: absolute;
+    right: 15;
+    bottom: 7;
+    padding: 9px;
+}
+.ad{ 
+    text-align: center;
+    background:url(img/banner/b2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    
+    text-transform: capitalize;
+}
+.ad h1{
+    font-size: 40px;
+    padding: 15px;
+}
+button.buttom{
+    font-size: 20px;
+    border: none;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+}
+.ad button:hover{
+    background-color: rgb(240, 227, 227);
+    opacity: 0.9;
+}.two{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child,.child1{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(img/banner/b17.jpg) no-repeat;
+    background-size: cover;
+    min-width: 500px;
+    padding: 0px 0px 0px 20px;
+    height: 40vh;
+    text-transform: capitalize;
+}
+.child1{
+    background: url(img/banner/b10.jpg) no-repeat;
+}
+.h3{
+    font-size: 19px;
+    font-weight: 300;
+    color: #fff;
+}
+.h1{
+    font-weight: 700;
+    color: snow;
+    padding: 8px 0px;
+    font-size: 25px;
+}
+.white-btn{
+    background-color: transparent;
+    border: solid #fff;
+    padding: 9px 20px;
+    margin: 12px 0px;
+    font-weight: 700;
+    color: #fff;
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+.mm{
+    display: flex;
+    background: url(img/banner/b4.jpg) no-repeat;
+    background-size: cover;
+}
